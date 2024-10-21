@@ -1,0 +1,317 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ccc;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.quiz-image {
+    width: 80%; /* Adjust the size as needed */
+    max-width: 600px; /* Maximum width */
+    margin: 20px 0;
+}
+
+.confirmation {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #bebebe;
+}
+
+button {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #23527c;
+}
+
+/* Quiz Intro Section */
+
+.quiz-intro {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-intro h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.quiz-intro p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Quiz Categories Section */
+
+.quiz-categories {
+    margin-bottom: 20px;
+}
+
+.quiz-categories h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.quiz-categories ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-categories li {
+    margin-bottom: 10px;
+}
+
+.quiz-categories a {
+    font-size: 18px;
+    color: #337ab7;
+}
+
+.quiz-categories a:hover {
+    color: #23527c;
+}
+
+/* Call-to-Action Section */
+
+.call-to-action {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.call-to-action h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.call-to-action p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.call-to-action button {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.call-to-action button:hover {
+    background-color: #23527c;
+}
+
+/* Search Bar Section */
+
+.search-bar {
+    margin-bottom: 20px;
+}
+
+.search-bar input[type="search"] {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #23527c;
+}
+
+/* Quiz Info Section */
+
+.quiz-info {
+    margin-bottom: 20px;
+}
+
+.quiz-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.quiz-info ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-info li {
+    margin-bottom: 10px;
+}
+
+.quiz-info a {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.quiz-info a:hover {
+    color: #191919;
+}
+
+/* Accordion Styles */
+
+.accordion {
+    background-color: #23527c;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.accordion-content {
+    padding: 10px;
+    display: none;
+}
+
+.accordion-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Progress Bar Section */
+
+.progress-bar {
+    margin-bottom: 20px;
+}
+
+.progress-bar h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.progress {
+    width: 100%;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 50%;
+    height: 20px;
+    background-color: #337ab7;
+    border-radius: 10px;
+}

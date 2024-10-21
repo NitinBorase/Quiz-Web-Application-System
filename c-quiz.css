@@ -1,0 +1,101 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  a:hover {
+    color: #bebebe;
+  }
+  
+  /* Level Selection */
+  
+  main ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  main li {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  main a {
+    display: block;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #636363;
+    transition: background-color 0.2s ease;
+  }
+  
+  main a:hover {
+    background-color: #000000;
+  }
+  
+  .level {
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  .level:hover {
+    color: #ffffff;
+  }
+  .report-container {
+    width: 70%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd; /* Border around the entire table */
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    padding-left: 15px; /* Additional padding for left */
+    padding-right: 15px; /* Additional padding for right */
+  }
+  
+  th {
+    background-color: #f0f0f0;
+  }
+  
+  /* Add space between columns */
+  td {
+    border-left: 1px solid #ddd; /* Add left border for spacing */
+  }
+  
+  td:first-child {
+    border-left: none; /* Remove left border for the first column */
+  }

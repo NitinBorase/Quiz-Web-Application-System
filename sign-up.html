@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizLife - Signup</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-brand">QuizLife</div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="log-in.html">Log In</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Signup to QuizLife</h1>
+        <form id="signup-form" action="/signup" method="post">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+
+            <label for="contact-number">Contact Number:</label>
+            <input type="tel" id="contact-number" name="contact-number" pattern="[0-9]{10}" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button id="signup-button">Signup</button>
+            <div id="error-message"></div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 QuizLife. All rights reserved.</p>
+    </footer>
+    <script>
+        const form = document.getElementById('signup-form');
+        const errorMessage = document.getElementById('error-message');
+      
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+      
+          const email = document.getElementById('email').value;
+          const contactNumber = document.getElementById('contact-number').value;
+          const password = document.getElementById('password').value;
+          const confirmPassword = document.getElementById('confirm-password').value;
+      
+          if (!email.match(/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/)) {
+            errorMessage.textContent = 'Invalid email format';
+            return;
+          }
+      
+          if (!contactNumber.match(/[0-9]{10}/)) {
+            errorMessage.textContent = 'Invalid contact number format';
+            return;
+          }
+      
+          if (password !== confirmPassword) {
+            alert('Passwords do not match');
+            return;
+          }
+      
+          // If all inputs are valid, submit the form and redirect to home.html
+          form.action = '/signup';
+          form.method = 'post';
+          form.submit();
+          window.location.href = 'quiz.html'; // Redirect to home.html
+        });
+      </script>
+</body>
+</html>

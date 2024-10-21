@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+    background-image: linear-gradient(to bottom, #f9f9f9, #f2f2f2);
+ }
+
+h1 {
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #4CAF50;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, #f2f2f2, #f9f9f9);
+    background-attachment: fixed;
+    background-size: 100% 300px;
+}
+
+.question-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, #fff, #f2f2f2);
+}
+
+.question {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    background-image: linear-gradient(to bottom, #f9f9f9, #f2f2f2);
+}
+
+.question h3 {
+    margin-top: 0;
+    color: #333;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #666;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button[type="button"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 20px auto;
+}
+
+button[type="button"]:hover {
+    background-color: #3e8e41;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #00698f;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    background-image: linear-gradient(to bottom, #f9f9f9, #f2f2f2);
+}
+
+#result h2 {
+    margin-top: 0;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
